@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/nota1"
+            android:layout_width="235dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="68dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Nota 1"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+            android:id="@+id/resultado"
+            android:layout_width="240dp"
+            android:layout_height="171dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calcular"
+            app:layout_constraintVertical_bias="0.236" />
+
+    <Button
+            android:id="@+id/calcular"
+            android:layout_width="128dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="52dp"
+            android:background="#925FEC"
+            android:text="@string/Calcular"
+            android:textColor="@color/branco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faltas"
+            tools:ignore="TextContrastCheck" />
+
+    <EditText
+            android:id="@+id/faltas"
+            android:layout_width="234dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Faltas"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nota2" />
+
+    <EditText
+            android:id="@+id/nota2"
+            android:layout_width="237dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Nota 2"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nota1" />
+
+
+</android.support.constraint.ConstraintLayout>
